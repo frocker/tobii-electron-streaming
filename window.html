@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+<body>
+
+
+  <script>
+
+  //Get Gaze coordinates
+  var ipc = require('electron').ipcRenderer;
+    ipc.on('gaze-pos', (event, arg) => {
+      if(arg.timestamp)
+      gazePosition.x = arg.x;
+      gazePosition.y = arg.y;
+    });
+    //GazePosition will be continually updated with gaze coordinates
+    var gazePosition = {x : 0, y: 0};
+    
+  </script>
+</body>
