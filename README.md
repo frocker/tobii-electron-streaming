@@ -8,8 +8,8 @@ Access the input stream using the C# SDK & streams the output over UDP on localh
     This will initiate the Tobii SDK, and act as the server to send the gaze input stream
     
 2. Use the included electron app template to recieve the eye gaze stream.
-    This acts as the client.
+   
+   This acts as the client.
     
 Planned features:
-- Will add an configurable precompiled .exe to avoid user's writing any C# code.
 - Will add a stream for headposition.
